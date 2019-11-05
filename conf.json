@@ -1,0 +1,23 @@
+{
+    "commander": {
+        "password": "gr36"
+    },
+    "instance": {
+        "port": 3128,
+        "scaling": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    "providers": [
+        {
+            "type": "digitalocean",
+            "token": "9322556ca6df8190d9fe57648ac62ba00d182ac3e9b045f256b5c59042a3d2fc",
+            "region": "lon1",
+            "size": "s-1vcpu-1gb",
+            "sshKeyName": "mykey",
+            "imageName": "forward-proxy",
+            "tags": "proxy"
+        }
+    ]
+}
